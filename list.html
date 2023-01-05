@@ -1,0 +1,31 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Все кандидаты</h1>-->
+<!--<p><a href="/candidate/<x>">Adela Hendricks</a></p>-->
+<!--<p><a href="/candidate/<x>">Sheri Torres</a></p>-->
+<!--<p><a href="/candidate/<x>">Burt Stein</a></p>-->
+<!--<p><a href="/candidate/<x>">Bauer Adkins</a></p>-->
+<!--<p><a href="/candidate/<x>">Day Holloway</a></p>-->
+<!--<p><a href="/candidate/<x>">Austin Cochran</a></p>-->
+<!--<p><a href="/candidate/<x>">Sheree Love</a></p>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Candidates</title>
+    </head>
+    <body>
+        <h1>Все кандидаты</h1>
+        {% for i in range(7) %}
+        <p><a href="/candidate/{{ i+1 }}">{{ candidates[i].name }}</a></p>
+        {% endfor %}
+    </body>
+</html>
